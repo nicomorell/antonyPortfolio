@@ -1,13 +1,19 @@
-$(document).ready(function() {
-    $(".fancybox").fancybox({
-        animationEffect : false,
-        closeClickOutside : true,
-        arrows          : true,
-        clickContent    : false,
-        mobile: { clickOutside : 'close' },
-        fitToView  : false,
-    })
+
+// Fancybox Config
+$('[data-fancybox="gallery"]').fancybox({
+    buttons: [
+        "slideShow",
+        "thumbs",
+        "zoom",
+        "fullScreen",
+        "share",
+        "close"
+    ],
+    loop: false,
+    protect: true
 });
+
+
 
 (function($) {
     "use strict";
@@ -77,4 +83,5 @@ $(document).ready(function() {
     }, function() {
         $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut();
     });
+
 })(jQuery);

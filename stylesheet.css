@@ -1,0 +1,89 @@
+body {
+    height:200vh;
+}
+#mainNav {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
+    -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
+    transition: padding-top 0.3s, padding-bottom 0.3s;
+    border: none;
+    background-color: transparent;
+}
+
+.container {
+    width: 60%;
+    margin: 2rem auto;
+}
+
+#mainNav .navbar-brand {
+    color: #E1A87A;
+    font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive;
+}
+
+#mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
+    color: #E1A87A;
+}
+
+#mainNav .navbar-nav .nav-item .nav-link {
+    font-size: 90%;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: white;
+    padding: 1.1em 0.75em !important;
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    -webkit-transition: background 0.1s ease-in-out;
+    -moz-transition: background 0.1s ease-in-out;
+    transition: background 0.1s ease-in-out;
+}
+
+#mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
+    color: #E1A87A;
+}
+
+.navbar-dark .navbar-toggler {
+    border: none;
+    color:white !important;
+}
+
+
+.dropdownMenu {
+    display: block;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.4s linear;
+}
+.dropdownMenu a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdownMenu {display: block;}
+
+.dropdownMenu a {
+    padding: 0.5rem 0.6rem;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdownn:hover .dropdownMenu {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    transition-delay:0s;  //set delay here
+}
+
+#mainNav.navbar-shrink {
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: #212529;
+}
+
+@media all and (min-width: 992px) {
+    .navbar .nav-item .dropdown-menu{ display: none; }
+    .navbar .nav-item:hover .nav-link{ color: #fff;  }
+    .navbar .nav-item:hover .dropdown-menu{ display: block; }
+    .navbar .nav-item .dropdown-menu{ margin-top:0; }
+}

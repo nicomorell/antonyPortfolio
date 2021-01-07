@@ -107,6 +107,11 @@ body {
 
 .vertical {
     grid-row: span 11;
+    display: inline-block;
+}
+.verticalHome {
+    grid-row: span 11;
+    display: inline-block;
 }
 
 .big {
@@ -354,6 +359,9 @@ color:black !important;
     .navbar-collapse {
         background-color: #cecece !important;
     }
+    #mainNav {
+        background-color: #cecece;
+    }
 }
 
 .slideshow-container {
@@ -440,10 +448,13 @@ img {vertical-align: middle;}
         font-size: 11px
     }
 }
-@media only screen and (max-width: 900px) {
-
+@media only screen and (max-width: 500px) {
+    #name {
+        padding-left: 0rem;
+        font-size: 2rem;
+    }
     .slidesvertical {
-        width: 80%;
+        width: 60%;
         display: block;
         position: absolute;
         top: 0;
@@ -463,4 +474,11 @@ img {vertical-align: middle;}
         right: 0;
         margin: auto;
     }
+}
+@media only screen and (max-width: 800px) {
+.vertical {
+    grid-row: span 11;
+    grid-column: span 2;
+    display: inline-block;
+}
 }

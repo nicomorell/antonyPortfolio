@@ -21,10 +21,10 @@
     <title>Nicolas Morell</title>
 </head>
 <body>
-
+<div id = "navDiv">
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
     <div class="container">
-        <a class="navbar-brand js-scroll-trigger"><b>Antony Rivolta</b></a>
+        <a class="navbar-brand js-scroll-trigger" href="/antonyPortfolio/index.html"><b>Antony Rivolta</b></a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
                 data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -60,17 +60,97 @@
             </ul>
         </div>
     </div>
+    <div class="socialmedia">
+        <div class="social-network social-circle">
+            <a href="https://www.instagram.com/antonyrphotography/" class="icoInstagram" title="Instagram"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.facebook.com/antonyrphotography" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a>
+            <a href="https://twitter.com/antonyrphoto" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a>
+        </div>
+    </div>
 </nav>
-<a class="fancybox" data-fancybox = "gallery" data-fancybox-href="images/home.jpeg" rel="group" href="images/home.jpeg">
-    <img class="mx-auto" id="mainn" src="images/home.jpeg" alt="Portrait Image">
-</a>
-<a class="fancybox" data-fancybox = "gallery" data-fancybox-href="images/home.jpeg" rel="group" href="images/home.jpeg">
-    <img class="mx-auto" id="mainnn" src="images/home.jpeg" alt="Portrait Image">
-</a>
-<div id = "mainPic">
-    <img id="main" src="images/home.jpeg" alt="">
+
 </div>
 
+<div class="slideshow-container">
+
+    <div class="mySlides">
+        <div class="numbertext">1 / 6</div>
+        <div class = "innerDiv">
+        <img class = "slidesvertical" src="images/lifestyle/DSC09438.jpg">
+            </div>
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">2 / 6</div>
+        <img class = "slidesvertical" src="images/lifestyle/DSC05261-3.jpg">
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">3 / 6</div>
+        <img class = "slideshorizontal" src="images/automotive/DSC02751.jpg">
+    </div>
+    <div class="mySlides">
+        <div class="numbertext">4 / 6</div>
+        <img class = "slidesvertical" src="images/nature/DSC02508.jpg">
+    </div>
+    <div class="mySlides">
+        <div class="numbertext">5 / 6</div>
+        <img class = "slideshorizontal" src="images/nature/DSC09741-3 copy.jpg">
+    </div>
+    <div class="mySlides">
+        <div class="numbertext">6 / 6</div>
+        <img class = "slidesvertical" src="images/nature/DSC04225.jpg">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+
+<div id = "dots" style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+    <span class="dot" onclick="currentSlide(6)"></span>
+
+</div>
+
+<script>
+    var slideIndex = 1;
+    var timer = null;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        clearTimeout(timer);
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        clearTimeout(timer);
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n==undefined){n = ++slideIndex}
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" activeDot", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " activeDot";
+        timer = setTimeout(showSlides, 3500);
+    }
+
+</script>
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
 <!-- Bootstrap Stylesheet -->

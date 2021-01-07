@@ -22,45 +22,87 @@
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-    <div class="container">
-        <a class="navbar-brand js-scroll-trigger"><b>Antony Rivolta</b></a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-                aria-label="Toggle navigation">
-            Menu
-            <i class="fa fa-bars"></i>
-        </button>
+<div id = "navDiv">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="/antonyPortfolio/index.html"><b>Antony Rivolta</b></a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                    data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                Menu
+                <i class="fa fa-bars"></i>
+            </button>
 
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav text-uppercase ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="/antonyPortfolio/index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="/antonyPortfolio/lifestyle.html">Lifestyle</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="/antonyPortfolio/nature.html">Nature</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link js-scroll-trigger" href="/antonyPortfolio/automotive.html">Automotive</a>
-                </li>
-                <li class="nav-item dropdownn">
-                    <a class="nav-link  dropdown-toggle" data-toggle="dropdown">Clients</a>
-                    <div class="dropdownMenu">
-                        <a class="dropdown-item" href="/antonyPortfolio/tippmee.html">Tippmee</a></>
-                    <a class="dropdown-item" href="/antonyPortfolio/rosy.html">Rosy Ruiz</a></>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ml-auto" id = "myTab">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" id = "home" href="/antonyPortfolio/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" id = "lifestyle" href="/antonyPortfolio/lifestyle.html">Lifestyle</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" id = "nature" href="/antonyPortfolio/nature.html">Nature</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link js-scroll-trigger" id = "automotive" href="/antonyPortfolio/automotive.html">Automotive</a>
+                    </li>
+                    <li class="nav-item dropdownn">
+                        <a class="nav-link  dropdown-toggle" id = "clients" data-toggle="dropdown">Clients</a>
+                        <div class="dropdownMenu">
+                            <a class="dropdown-item" href="/antonyPortfolio/tippmee.html">Tippmee</a>
+                            <a class="dropdown-item" href="/antonyPortfolio/rosy.html">Rosy Ruiz</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" id = "contact" href="/antonyPortfolio/contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="/antonyPortfolio/contact.html">Contact</a>
-        </li>
+        <div class="socialmedia">
+            <div class="social-network social-circle">
+                <a href="https://www.instagram.com/antonyrphotography/" class="icoInstagram" title="Instagram"><i class="fa fa-instagram"></i></a>
+                <a href="https://www.facebook.com/antonyrphotography" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a>
+                <a href="https://twitter.com/antonyrphoto" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a>
+            </div>
+        </div>
+    </nav>
+</div>
+<div class="container">
+    <a class="fancybox big" data-fancybox = "gallery" data-fancybox-href="images/automotive/DSC02751.jpg" rel="group" href="images/automotive/DSC02751.jpg">
+        <img class="mx-auto" src="images/automotive/DSC02751.jpg" alt="Portrait Image">
+    </a>
+    <a class="fancybox vertical" data-fancybox = "gallery" data-fancybox-href="images/automotive/DSC02745.jpg" rel="group" href="images/automotive/DSC02745.jpg">
+        <img class="mx-auto" src="images/automotive/DSC02745.jpg" alt="Portrait Image">
+    </a>
+    <a class="fancybox vertical" data-fancybox = "gallery" data-fancybox-href="images/automotive/DSC02748.jpg" rel="group" href="images/automotive/DSC02748.jpg">
+        <img class="mx-auto" src="images/automotive/DSC02748.jpg" alt="Portrait Image">
+    </a>
+    <a class="fancybox vertical" data-fancybox = "gallery" data-fancybox-href="images/automotive/DSC02753.jpg" rel="group" href="images/automotive/DSC02753.jpg">
+        <img class="mx-auto" src="images/automotive/DSC02753.jpg" alt="Portrait Image">
+    </a>
+    <a class="fancybox vertical" data-fancybox = "gallery" data-fancybox-href="images/automotive/DSC02794.jpg" rel="group" href="images/automotive/DSC02794.jpg">
+        <img class="mx-auto" src="images/automotive/DSC02794.jpg" alt="Portrait Image">
+    </a>
+    <a class="fancybox vertical" data-fancybox = "gallery" data-fancybox-href="images/automotive/DSC02800.jpg" rel="group" href="images/automotive/DSC02800.jpg">
+        <img class="mx-auto" src="images/automotive/DSC02800.jpg" alt="Portrait Image">
+    </a>
+    <!--
+        <a class="fancybox big" data-fancybox = "gallery" data-fancybox-href="images/home.jpeg" rel="group" href="images/home.jpeg">
+        <img class="mx-auto" src="images/lifestyle/DSC09534.jpg" alt="Portrait Image">
+    </a>
+        <a class="fancybox horizontal" data-fancybox = "gallery" data-fancybox-href="images/home.jpeg" rel="group" href="images/home.jpeg">
+        <img class="mx-auto" src="images/lifestyle/DSC00756.jpg" alt="Portrait Image">
+    </a>
+        <a class="fancybox" data-fancybox = "gallery" data-fancybox-href="images/home.jpeg" rel="group" href="images/home.jpeg">
+        <img class="mx-auto" src="images/lifestyle/DSC05927.jpg" alt="Portrait Image">
+    </a>
+    !-->
+</div>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
-        </ul>
-    </div>
-    </div>
-</nav>
+<!-- Bootstrap Stylesheet -->
 <link rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css"
       integrity="sha256-LA89z+k9fjgMKQ/kq4OO2Mrf8VltYml/VES+Rg0fh20=" crossorigin="anonymous"/>

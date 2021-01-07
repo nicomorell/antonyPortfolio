@@ -37,6 +37,7 @@ $('[data-fancybox="gallery"]').fancybox({
     window.setTimeout(offsetAnchor, 0);
     var navbarCollapse = function() {
         if ($("#mainNav").offset().top > 100) {
+            console.log("TEST");
             $("#mainNav").addClass("navbar-shrink");
         } else {
             $("#mainNav").removeClass("navbar-shrink");

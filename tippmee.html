@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="utf-8" content="width=device-width, initial-scale=1" name="viewport"/>
     <link href="https://fonts.googleapis.com/css?family=Cinzel:400,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <link rel="icon" href="favicon_io/favicon.ico" type="image/x-icon" />
 
@@ -21,46 +24,55 @@
     <title>Nicolas Morell</title>
 </head>
 <body>
+<div id = "navDiv">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="/antonyPortfolio/index.html"><b id = "name">Antony Rivolta</b></a>
+            <button id = "menuButton" class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                    data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                Menu
+                <i class="fa fa-bars"></i>
+            </button>
 
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-    <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="/antonyPortfolio/index.html"><b>Antony Rivolta</b></a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-                aria-label="Toggle navigation">
-            Menu
-            <i class="fa fa-bars"></i>
-        </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ml-auto" id = "myTab">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" id = "home" href="/antonyPortfolio/index.html">Home</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link js-scroll-trigger" id = "lifestyle" href="/antonyPortfolio/lifestyle.html">Lifestyle</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" id = "nature" href="/antonyPortfolio/nature.html">Nature</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" id = "automotive" href="/antonyPortfolio/automotive.html">Automotive</a>
+                    </li>
+                    <li class="nav-item dropdownn">
+                        <a class="nav-link  dropdown-toggle" id = "clients" data-toggle="dropdown">Clients</a>
+                        <div class="dropdownMenu">
+                            <a class="dropdown-item" href="/antonyPortfolio/tippmee.html">Tippmee</a>
+                            <a class="dropdown-item" href="/antonyPortfolio/rosy.html">Rosy Ruiz</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" id = "contact" href="/antonyPortfolio/contact.html">Contact</a>
+                    </li>
 
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav text-uppercase ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="/antonyPortfolio/index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="/antonyPortfolio/lifestyle.html">Lifestyle</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="/antonyPortfolio/nature.html">Nature</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="/antonyPortfolio/automotive.html">Automotive</a>
-                </li>
-                <li class="nav-item dropdownn">
-                    <a class="nav-link  dropdown-toggle" data-toggle="dropdown">Clients</a>
-                    <div class="dropdownMenu">
-                        <a class="dropdown-item" href="/antonyPortfolio/tippmee.html">Tippmee</a></>
-                    <a class="dropdown-item" href="/antonyPortfolio/rosy.html">Rosy Ruiz</a></>
+                </ul>
+            </div>
         </div>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="/antonyPortfolio/contact.html">Contact</a>
-        </li>
+        <div class="socialmedia">
+            <div class="social-network social-circle">
+                <a href="https://www.instagram.com/antonyrphotography/" class="icoInstagram" title="Instagram"><i class="fa fa-instagram"></i></a>
+                <a href="https://www.facebook.com/antonyrphotography" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a>
+                <a href="https://twitter.com/antonyrphoto" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a>
+            </div>
+        </div>
+    </nav>
 
-        </ul>
-    </div>
-    </div>
-</nav>
+</div>
 <link rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css"
       integrity="sha256-LA89z+k9fjgMKQ/kq4OO2Mrf8VltYml/VES+Rg0fh20=" crossorigin="anonymous"/>

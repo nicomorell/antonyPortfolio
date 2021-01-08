@@ -95,7 +95,6 @@ body {
     display: grid;
     grid-gap: 5px;
     column-count:2;
-    padding-right: 0 !important;
     grid-auto-rows: 75px;
     grid-auto-flow: dense;
 }
@@ -112,6 +111,10 @@ body {
 .verticalHome {
     grid-row: span 11;
     display: inline-block;
+}
+
+#picture {
+    padding-left:12vw;
 }
 
 .big {
@@ -195,7 +198,7 @@ body {
 
 
 #portrait {
-    max-width: 26em;
+    max-width: 23rem;
     margin: auto;
 }
 
@@ -475,10 +478,22 @@ img {vertical-align: middle;}
         margin: auto;
     }
 }
+
 @media only screen and (max-width: 800px) {
 .vertical {
     grid-row: span 11;
     grid-column: span 2;
     display: inline-block;
 }
+    .col {
+        flex-grow: 0 !important;
+    }
+    #intro {
+        padding-top: 4vw;
+    }
+}
+@media only screen and (max-width: 750px) {
+    #picture {
+        padding-left:0vw;
+    }
 }

@@ -15,16 +15,18 @@ body {
 .container {
     max-width: 95vw !important;
     margin: 2rem auto;
+    padding-right:0px !important;
 }
 
 
 #mainNav .navbar-brand {
     color: #000000;
     font-family: 'Lato', sans-serif;
+    margin-right:0rem !important;
 }
 #name {
-    font-size: 2.5rem;
-    padding-left: 5rem;
+    font-size: 2.3rem;
+    padding-left: 2.8rem;
     font-family: 'Lato', sans-serif;
 
 }
@@ -83,6 +85,7 @@ body {
     .navbar .nav-item:hover .nav-link{ color: #fff;  }
     .navbar .nav-item:hover .dropdown-menu{ display: block; }
     .navbar .nav-item .dropdown-menu{ margin-top:0; }
+
 }
 #mainPic {
     height: 100%;
@@ -496,4 +499,19 @@ img {vertical-align: middle;}
     #picture {
         padding-left:0vw;
     }
+}
+@media only screen and (max-width: 1000px) {
+    .slidesvertical {
+        width: 30%;
+    }
+    .slideshorizontal {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .slidesvertical {
+        width: 35%;
+    }
+
 }

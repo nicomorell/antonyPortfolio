@@ -36,7 +36,7 @@ $('[data-fancybox="gallery"]').fancybox({
 
     window.setTimeout(offsetAnchor, 0);
     var navbarCollapse = function() {
-        if ($("#mainNav").offset().top > 100) {
+        if ($("#mainNav").offset().top > 75) {
             $("#mainNav").addClass("navbar-shrink");
         } else {
             $("#mainNav").removeClass("navbar-shrink");
@@ -83,5 +83,6 @@ $('[data-fancybox="gallery"]').fancybox({
     }, function() {
         $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut();
     });
+
 
 })(jQuery);

@@ -16,6 +16,7 @@ body {
     max-width: 95vw !important;
     margin: 2rem auto;
     padding-right:0px !important;
+    padding-left:0px !important;
 }
 
 
@@ -26,9 +27,8 @@ body {
 }
 #name {
     font-size: 2.3rem;
-    padding-left: 2.8rem;
+    padding-left: 3.7rem;
     font-family: 'Lato', sans-serif;
-
 }
 
 
@@ -77,7 +77,7 @@ body {
 #mainNav.navbar-shrink {
     padding-top: 0;
     padding-bottom: 0;
-    background-color: #cecece;
+    background-color: white;
 }
 
 @media all and (min-width: 992px) {
@@ -144,9 +144,8 @@ body {
     object-fit: cover;
 }
 .slidesvertical {
-    width: 40%;
+    width: 24rem;
     display: block;
-    background-color: red;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -156,9 +155,8 @@ body {
 }
 
 .slideshorizontal {
-    width: 80%;
+    width: 70%;
     display: block;
-    background-color: red;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -201,7 +199,7 @@ body {
 
 
 #portrait {
-    max-width: 23rem;
+    max-width: 17rem;
     margin: auto;
 }
 
@@ -332,7 +330,7 @@ transition: all 0.8s;
 #mainNav.navbar-shrink {
     padding-top: 0;
     padding-bottom: 0;
-    background-color: #f3f3f3;
+    background-color: white;
 }
 
 .navbar-toggler:focus,
@@ -359,14 +357,11 @@ color:black !important;
 }
 
 @media (max-width: 992px) {
-    .socialmedia {
-        display: none;
-    }
     .navbar-collapse {
-        background-color: #cecece !important;
+        background-color: white !important;
     }
     #mainNav {
-        background-color: #cecece;
+        background-color: white;
     }
 }
 
@@ -460,7 +455,7 @@ img {vertical-align: middle;}
         font-size: 2rem;
     }
     .slidesvertical {
-        width: 60%;
+        width: 80%;
         display: block;
         position: absolute;
         top: 0;
@@ -468,6 +463,10 @@ img {vertical-align: middle;}
         left: 0;
         right: 0;
         margin: auto;
+    }
+    .vertical {
+        grid-row: span 7;
+        display: inline-block;
     }
 
     .slideshorizontal {
@@ -484,34 +483,72 @@ img {vertical-align: middle;}
 
 @media only screen and (max-width: 800px) {
 .vertical {
-    grid-row: span 11;
-    grid-column: span 2;
+    grid-row: span 4;
     display: inline-block;
 }
+    .horizontal {
+        grid-row: span 3;
+        grid-column: span 2;
+    }
+    .big {
+        grid-column: span 2;
+        grid-row: span 3;
+    }
+
     .col {
         flex-grow: 0 !important;
     }
     #intro {
-        padding-top: 4vw;
+        padding-top: 10vw;
     }
 }
 @media only screen and (max-width: 750px) {
     #picture {
         padding-left:0vw;
     }
+    #name {
+        padding-left: 0rem;
+    }
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (min-width:500px) and (max-width: 1000px) {
     .slidesvertical {
-        width: 30%;
+        width: 26rem;
     }
     .slideshorizontal {
         width: 70%;
     }
+
 }
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (min-width:1000px) and (max-width: 1500px) {
     .slidesvertical {
-        width: 35%;
+        width: 48vh;
     }
+}
 
+@media only screen and (max-width: 650px) and (min-width: 450px) {
+    .vertical {
+        grid-row: span 5;
+        display: inline-block;
+    }
+    .horizontal {
+        grid-row: span 3;
+        grid-column: span 2;
+    }
+}
+@media only screen and (max-width: 950px) and (min-width: 650px) {
+    .vertical {
+        grid-row: span 7;
+        display: inline-block;
+    }
+    .horizontal {
+        grid-row: span 3;
+        grid-column: span 2;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    #name {
+        padding-left: 0px;
+    }
 }
